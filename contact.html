@@ -3,67 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
-<header class="main-header">
-    <div class="header-logo">Верстка</div>
-    <div class="header-social">
-        <a href="#">VK</a>
-        <a href="#">Git</a>
-    </div>
-</header>
-<main>
-    <div class="left-column">
-        <nav class="main-navigation">
-            <ul class="menu">
-                <li class="menu-item">
-                    <a  href="index.html">Обо мне</a>
-                </li>
-                <li class="menu-item">
-                    <a href="examples.html">Мои работы</a>
-                </li>
-                <li class="menu-item active">
-                    <a href="contact.html">Связаться со мной</a>
-                </li>
-            </ul>
-        </nav>
+<div class="containercontact">
+<div class="whitemonitor">
+    <div class="graymonitor">
+        <ul class="index-page-galery">
+            <div class="circle-browser">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
 
-        <div class="contacts">
-            <p><a class="e-mail" href="mailto:ea.malyshkina@gmail.com">ea.malyshkina@gmail.com</a></p>
-            <p><a class="phone" href="tel:+7 (926) 354 66 29">+7 (926) 354 66 29</a></p>
-            <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-            <div id="SkypeButton_Call_pichushka19_1">
-                <script type="text/javascript">
-                    Skype.ui({
-                        "name": "chat",
-                        "element": "SkypeButton_Call_pichushka19_1",
-                        "participants": ["pichushka19"],
-                        "imageColor": "white",
-                        "imageSize": 24
-                    });
-                </script>
             </div>
+            <li class="active"><a class="circle" href="#sedona" data-toggle="tab">Sedona</a></li>
+            <li><a class="circle" href="#nerds" data-toggle="tab">Nerds</a></li>
+            <li><a class="circle" href="#prostomary" data-toggle="tab">Prostomary</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active center" id="sedona">
+                <img src="img/sedona.png"
+                     alt="Sedona"></div>
+            <div class="tab-pane center" id="nerds">
+                <img src="img/nerds.png"
+                    alt="nerds"></div>
+            <div class="tab-pane center" id="prostomary">
+                <img src="img/prostomary.png"
+                    alt="prostomary"></div>
         </div>
-    </div>
 
-    <div class="right-column">
-        <div class="works">
-            <div class="title">Напишите мне</div>
-            <form action="#" method="get">
-                <label>Имя
-                <input type="text" name="name" placeholder="Как к вам обращаться"/></label>
-                <label>Email
-                    <input type="email" name="email" placeholder="Куда мне написать"/></label><br>
-                <label>Сообщение<br>
-                    <textarea name="massage" cols="58" rows="15" placeholder="Текст сообщения"></textarea></label>
-            </form>
-        </div>
-    </div>
-</main>
 
-<footer>
-</footer>
+    </div>
+</div>
+</div>
 
 </body>
 </html>
